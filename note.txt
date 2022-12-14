@@ -1,0 +1,36 @@
+1. State - position hocche amr ekta obosta ebong seta shomoy er shate shate change hocche ebong kono ekta particular time e amr position ekta fixed so ei jinish to hocche state.
+
+2. increment, decrement and counter button ke handling korar jonnor first html file e id diye select korte hobe  
+          -id (counter, increment, decrement)
+
+
+3. Select DOM elements in JS file
+          - select element system
+              - document.getELementById("ID")
+  ei function ta diye hmtl 3 ta dom element ke dorte hobe 
+
+
+4. set the initial state 
+        (let) use korte 
+          - let count = 0;
+
+5. add event listener add korte hobe 
+         .addEventListener("kon event listen koraben", () => {
+               count++ (er maddome count er value barano hoi)
+               //ui e show koranor jonno 
+                  .innerText = count ; 
+         })
+
+         .addEventListener("kon event listen koraben", () => {
+               count-- (er maddome count er value komano hoi)
+                //ui e show koranor jonno 
+                  .innerText = count ; 
+         })
+
+6. ei koikta step korte parle apni jokon button click korben apnar button icrement and decrement hobe but ui e show korabe na tar jonno aro ekta kaj korte 
+//ui e show koranor jonno 
+ .innerText = count ; hobe 
+
+7. so ekhane row javascript use kore manually state ta poriborthon korchi 2 bar kaj korar maddome . so aita hocche old school way age developer eibhave kaj korto 
+modern world moloto ei bhave kaj kora hoi nah . ekon shob reactive way te kaj kora hoi 
+
