@@ -1,0 +1,22 @@
+ Reactive UI and Reusability
+
+ 1. counter name ekta functional component create korte hobe and app.js er shate connect korate hobe
+
+ 2. ekon amader ekta state lagbe . so react e state er jonno useState hook use korte hoi. counter state bosate hobe 
+      cont [count, setCount] = useState(0)
+
+3. counter jsx er bitor {count} ta bosate hobe 
+4. ekon increment name ekta arrow function nite hobe and oitar bitor abr setCount ta nite hobe. setCount moloto state ke change kore 
+5. setCount er bitor count value change korte hobe tar jonno prevcount use korte hobe. 
+        setCount((prevCount) => prevCount + 1); 
+
+6. increment er moto decrement o banate hobe just khali pore (prevCount - 1) use korte hobe 
+7. counter component je button gula ache seitar onClick e increment and decrement function gula set korte hobe 
+
+8. ei koikta process maddome react state er value change kora jacche by useState hook er maddome.
+
+9. useState kibave kaj kore - first ekta initial value dite hoi abr na dile o hoi. so basicaly ei hook jei componet use kora hobe sei comoponent er jonno ekta local state baniye felbe.amara jebhave variable defined kore kaj kori r aita hocche react way te state managment. 
+
+10. setCount state ke change korte help kore. jokon e state change ta hocche tokon e basically component ta rerender hoi and rerender hoye value gulo shob update peye jai .
+
+11. one way data flow : view => action => state
