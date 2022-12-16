@@ -1,0 +1,22 @@
+1.3 React State Management issues
+
+1. amra 1.2 te dekchilam kibave useState hook use korar maddome react state er value change kora jai . amra ekon ei chapter dekbo ei simple react state managment issue ta 
+
+2. stats name ekta compoenet create kore tar bitor props akare count namok ekta value distructuring korar maddome nite hobe app.js theke 
+
+3. ekon app.js e child component ache 3 ta 2 counter r ekta state ei 3 ta miley app.js ba parent component 
+4. ekon amra chacchi State compoenet er value ta hobe ager doi ta child component er state er value er jog fol. ekon ei kaj ei jog ta fol parent component kibave korbo sei ta deki cholen
+
+4. counter je state ta ache oita ke bahir kore niya aste hobe ek step age bosate hobe.mane parent component e state ta declare korate hobe tar mane amader ke abr resturcture korte hocche. counter compoent je nijesso state managment chilo seita tokon r kora jabe na 
+
+5. ekon amader app.js ba praent component separete ekta state banate hobe jekhane 
+   child component state manage kora jabe but child component e directly state r delcare kora jabe na. 
+
+6. ekon app.js je state ta declare kore hobe sei ta moloto child component er ekta array hobe. 
+     const initialState = [{}, {}, {}]
+aita obossoi app er upore use korte hobe 
+
+7. r useState hook ta amra app er bitor e use korbo r oi hook er bitore initialState ta pass kore dite hobe like 
+     const [state, setState] = useState(initialState);
+
+8. total state ba tota count amader ke jog korte hobe 
