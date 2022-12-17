@@ -1,0 +1,6 @@
+1.  কি ভাবে প্যারামিটারের মাধ্যমে ডাইনামিক ভ্যালু পাস করা যায় এবং সেই অনুযায়ী ডাইনামিক ভাবে ইনক্রিমেন্ট ও ডিক্রিমেন্ট করতে পারি এপ্লিকেশনের চাহিদা অনুযায়ী।
+
+2. type property ta redux e mandetory
+3. amra goto video te dekechi reduce function e action parameter maddome kibave 1 kore increment and decrement kora jai. but jodi eirokom je koto kore barabo ta directly bola thakbe na ba 5 kore 10 kore barate chai tokon amader ki korte hobe 
+
+4. tokon amader dispatch method modde payload add kore additional data barano ba komano jai action.payload, abar payload je single value thakbe ta na chaile object akare o dewa jai 

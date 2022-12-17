@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Counter from "./components/Counter";
 import Stats from "./components/Stats";
 
@@ -12,6 +13,34 @@ const initialState = [{
 }
 ]
 export default function App() {
+    const [state, setState] = useState(initialState);
+   
+    const totalCount = () => {
+        return state.reduce((total, counter) => total + counter.count + 0);
+    }
+     
+    const increment = (id) => {
+        const updatedCounter = state.map(c => {
+            if(c.id === id) {
+                return {
+                    ...c,
+                    count: c.count + 1
+                }
+            }
+            return {...c};
+        })
+    }
+    const decrement = (id) => {
+        const updatedCounter = state.map(c => {
+            if(c.id === id) {
+                return {
+                    ...c,
+                    count: c.count - 1
+                }
+            }
+            return {...c};
+        })
+    }
     return (
         <div className="w-screen h-screen p-10 bg-gray-100 text-slate-700">
             <h1 className="max-w-md mx-auto text-center text-2xl font-bold">
@@ -19,9 +48,10 @@ export default function App() {
             </h1>
 
             <div className="max-w-md mx-auto mt-10 space-y-5">
-                <Counter />
-                <Counter />
-                <Stats count={2}/>
+                {
+                   state.map(count => <Counter key={count.id} count={count.count} id={count.id} increment={increment} decrement={decrement}/>)
+                }
+                <Stats count={totalCount()}/>
             </div>
         </div>
     );

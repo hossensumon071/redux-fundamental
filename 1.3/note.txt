@@ -19,4 +19,22 @@ aita obossoi app er upore use korte hobe
 7. r useState hook ta amra app er bitor e use korbo r oi hook er bitore initialState ta pass kore dite hobe like 
      const [state, setState] = useState(initialState);
 
-8. total state ba tota count amader ke jog korte hobe 
+8. total state ba tota count amader ke jog korte hobe .ekta totalCount arrow function nite hobe and ei function tar kaj hocche total jog kora 
+      const totalCount = () => {
+
+      }
+9.ekon amra initialState je array ta ache tar element gula ke jog korte .ekon array element gula ke jog korar niom hocche reduce funtion use korar maddome jog kora jai. mane array shob gula element ke jog kore ekta single element ba value jonno amader reduce method er sahahjje korte hobe 
+
+10. const totalCount = () => {
+     return state.reduce((total, counter) => total + counter.count + 0);
+}
+
+11. stats child component e totalcount() ene declare kore dite hobe 
+
+12. counter componenet e je increment and decrement function gula chilo oigula kete app js bitore rakte hobe 
+
+13. jehoto child component ekdaik thakte pare tai amader ke handler function gulo te id gula dite hibe argument hisebe increment and decrement function 
+
+14. ekon initialState je array bitor count man ta chnage korate hobe by handler function diye .to react e directly array value change kore na. react ki kore arrar value ta ke age copy kore then okhan theke change kore. mane react er state ta immutably change korte hoi not directly muted korbo na mara jeta korbo sei array ta ke age copy kore ibo then aita totaly chage kore then finally sei ta return kore dibo 
+
+15. tarpor state er upr map korte hobe map moluto new ekta array return kore directly 

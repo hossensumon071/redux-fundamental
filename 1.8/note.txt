@@ -1,0 +1,30 @@
+// Understanding Reducers
+
+1. shobshmoy reducer function parameter hisebe current state ta and ekta action ei doi ta jinish parameter hisebe receive korbe and se ekta output dibe 
+2. tar kichu dhormo ache 
+          - aita ke pure function hote hobe 
+
+// Immutability concept
+
+3. redux e je amra reducer function likbo tar bitore state ke porbithron korte hole immutably way te korte hobe
+
+// রিডিওসার কে কেনো রিডিওসার বলা হয় তা আমরা এই ভিডিও তে জানবো এবং জব ইন্টাইভিউ এর এর জন্য খুবই ইন্টারেস্টিং একটি প্রশ্ন। আশা করি এই ভিডিও ভালো করে বুঝলে আপনি সহজেই অন্যকে বুঝাতে পারবেন।
+        -reducer word ta eseche javascript er array.reduce() method theke. array.reduce() ki kore ekta boro array ke ekta single array te reduce kore niye ashe. but tara main array ke kono change kore na 
+
+1.11 Redux Data Flow
+1.12 why redux is called a predictable state container
+         key principle of redux 
+           - state is a immutable object
+           - we cant mutate application object, we will always return a new modified state
+           - all state change are initiated through actions
+           - reducers take current state, action as arguments and return a new state ((state, action) => newState)
+
+           -undirectional data flow hoi reduce funtion e 
+              - state => action => reducer => state => action => reducer......
+
+           - Redux is inpired by ELm arcitecture that encourages functional programming principles like pure function
+           - That means pure functions output always same for same input
+           - every single state change in reducers has to be taken care of by developers explicitly
+           - Reducers are supposed to be pure that where the predictabilty comes from
+
+    - becuase using redux you will know what every single action in application will do and how state will change 
